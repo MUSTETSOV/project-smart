@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.fixed-top {
+
+  padding-top: 100px !important;;
+}
+
+
+.purple {
+  background-color: white !important;
+}
+
+.lighten-1 {
+  background-color: white !important;
+}
+
+
+.header {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.navbar-nav li{
+  margin-left:20px;
+
+}
+
+.nav-link-logo-text-blue {
+  color: #4371FE;
+}
+
+
+
+.navbar-brand {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #272727;
+}
+
+.nav-blue-button {
+
+/* blue */
+
+border: 1px solid #4371FE;
+box-sizing: border-box;
+border-radius: 4px;
+
+}
+
+.nav-red-button {
+
+
+  border: 1px solid #FF8987;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+}
+
+.nav-yellow-button {
+  border: 1px solid #FFA464;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+
+.nav-link-text-blue {
+
+font-family: 'Source Sans Pro';
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+/* blue */
+
+color: #4371FE;
+}
+
+
+.nav-link-text-red {
+
+
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FF8987;
+}
+
+.nav-link-text-yellow {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFA464;
+}
+
+
+
+
+
+.nav-link-text-default {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+
+
+
+/* gray */
+
+color: #616161;
+}
+
+.blue-color {
+color: #4371FE;
+}
+
+.black-text, .btn.btn-link {
+  color: #4371FE!important;
+}
+
+
+.navbar-nav {
+  text-transform: capitalize;
+}
