@@ -17,6 +17,9 @@ import { OurServicesComponent } from './main/our-services/our-services.component
 import { BrandsComponent } from './main/brands/brands.component';
 import { ReviewsComponent } from './main/reviews/reviews.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './shared/footer/footer.component';
+
 
 
 @NgModule({
@@ -30,13 +33,15 @@ import { ReviewsComponent } from './main/reviews/reviews.component';
     MakeSimpleComponent,
     OurServicesComponent,
     BrandsComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
