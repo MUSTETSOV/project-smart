@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
+  currentRate = 8;
+
+
   constructor() { }
 
   ngOnInit() {
