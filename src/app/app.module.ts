@@ -13,6 +13,10 @@ import { Header2Component } from './header2/header2.component';
 import { AboutusComponent } from './main/aboutus/aboutus.component';
 import { DeviceCategoriesComponent } from './device-categories/device-categories.component';
 import { MakeSimpleComponent } from './main/make-simple/make-simple.component';
+import { OurServicesComponent } from './main/our-services/our-services.component';
+import { BrandsComponent } from './main/brands/brands.component';
+import { ReviewsComponent } from './main/reviews/reviews.component';
+
 
 
 @NgModule({
@@ -23,7 +27,10 @@ import { MakeSimpleComponent } from './main/make-simple/make-simple.component';
     Header2Component,
     AboutusComponent,
     DeviceCategoriesComponent,
-    MakeSimpleComponent
+    MakeSimpleComponent,
+    OurServicesComponent,
+    BrandsComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+          <div class="row justify-content-md-center">
+              <div class="col">
+                  <h2 class="caption text-center">Our services</h2>
+              </div>
+            </div>
+
+            <div class="row overview-row" style="margin-top: 10px;">
+                <div *ngFor="let service of allServices" class="col-md-4 text-center category" style = "margin-top: 10px;">
+                  <a>
+                  <div ><img class="img-fluid " src="{{service.url}}"></div>
+                  <div class=" mx-auto category-name " style = "margin-top: 5px;">
+                      {{ service.name  }}
+                     </div>
+                    </a>
+                </div>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center" style="padding-top: 70px;">
+        <div class="col-md-auto">
+            <a mdbBtn color="primary" mdbWavesEffect class="main-button" >All categories</a>
+        </div>
+      </div>
+
+  </div>
