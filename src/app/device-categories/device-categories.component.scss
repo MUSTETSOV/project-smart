@@ -18,3 +18,37 @@ color: #272727;
 .container {
   padding: 70px;
 }
+
+
+.category-name {
+  font-family: SF Pro Display;
+font-size: 18px;
+line-height: 21px;
+
+}
+
+
+.overview-row {
+
+margin-top: 50px;
+
+}
+
+
+.category {
+
+}
+
+.category:hover {
+  img {
+    filter: brightness(0) invert(1);
+}
+  background-color:#4371FE;
+  color: white;
+
+}
+
+
+
+
+

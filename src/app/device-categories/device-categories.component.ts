@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetCategoriesService } from './get-categories.service';
 
 @Component({
   selector: 'app-device-categories',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeviceCategoriesComponent implements OnInit {
 
-  constructor() { }
+  allCategories:any[] = [];
+
+
+
+  constructor( private categoryService: GetCategoriesService) {
+    this.allCategories = this.categoryService.getImages();
+  }
 
   ngOnInit() {
   }
