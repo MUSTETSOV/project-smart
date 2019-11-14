@@ -12,6 +12,7 @@ import { IntroComponent } from './intro/intro.component';
 import { Header2Component } from './header2/header2.component';
 import { AboutusComponent } from './main/aboutus/aboutus.component';
 import { DeviceCategoriesComponent } from './device-categories/device-categories.component';
+import { MakeSimpleComponent } from './main/make-simple/make-simple.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DeviceCategoriesComponent } from './device-categories/device-categories
     IntroComponent,
     Header2Component,
     AboutusComponent,
-    DeviceCategoriesComponent
+    DeviceCategoriesComponent,
+    MakeSimpleComponent
   ],
   imports: [
     BrowserModule,
