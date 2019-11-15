@@ -24,6 +24,8 @@ import { RouterModule } from '@angular/router';
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { HomeComponent } from './home/home.component';
+import { DevicesComponent } from './devices/devices.component';
 
 
 
@@ -40,7 +42,9 @@ import { isPlatformBrowser } from '@angular/common';
     OurServicesComponent,
     BrandsComponent,
     ReviewsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    DevicesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'smartfix-app' }),
@@ -49,8 +53,8 @@ import { isPlatformBrowser } from '@angular/common';
     FormsModule,
     NgbModule,
     RouterModule.forRoot([
-       { path: '', component: AppComponent },
-       { path: 'devices', component: DeviceCategoriesComponent }
+       { path: '', component: HomeComponent },
+       { path: 'devices', component: DevicesComponent }
       // { path: 'shopping-cart', component: ShoppingCartComponent },
       // { path: 'check-out', component: CheckOutComponent },
       // { path: 'order-success', component: OrderSuccessComponent },
