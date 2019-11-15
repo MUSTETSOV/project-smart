@@ -26,6 +26,8 @@ import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { DevicesComponent } from './devices/devices.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrandsService } from './services/brands.service';
 
 
 
@@ -62,9 +64,10 @@ import { DevicesComponent } from './devices/devices.component';
       // { path: 'login', component: LoginComponent },
       // { path: 'admin/products', component: AdminProductsComponent },
       // { path: 'admin/orders', component: AdminOrdersComponent }
-    ])
+    ]),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BrandsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

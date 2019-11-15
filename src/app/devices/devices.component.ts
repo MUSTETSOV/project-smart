@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetCategoriesService } from '../device-categories/get-categories.service';
+import { BrandsService } from '../services/brands.service';
 
 @Component({
   selector: 'app-devices',
@@ -8,16 +9,24 @@ import { GetCategoriesService } from '../device-categories/get-categories.servic
 })
 export class DevicesComponent implements OnInit {
 
-  allCategories:any[] = [];
+  allCategories: any[] = [];
+
+  public brands: any = [];
 
 
+  constructor( private categoryService: GetCategoriesService, public brandsService: BrandsService) {
 
-  constructor( private categoryService: GetCategoriesService) {
-    this.allCategories = this.categoryService.getImages();
+
   }
 
 
   ngOnInit() {
+
+    this.brandsService.GetBrands()
+      .subscribe(data => this.brands = data);
+
+    console.log('GGGGGGEEEEEETTTTT' + this.brands);
+    console.log(this.brands);
   }
 
 }
