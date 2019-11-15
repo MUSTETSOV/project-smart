@@ -20,6 +20,7 @@ import { ReviewsComponent } from './main/reviews/reviews.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { RouterModule } from '@angular/router';
 
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
@@ -48,7 +49,18 @@ import { isPlatformBrowser } from '@angular/common';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot([
+       { path: '', component: AppComponent },
+       { path: 'devices', component: DeviceCategoriesComponent }
+      // { path: 'shopping-cart', component: ShoppingCartComponent },
+      // { path: 'check-out', component: CheckOutComponent },
+      // { path: 'order-success', component: OrderSuccessComponent },
+      // { path: 'my/orders', component: MyOrdersComponent },
+      // { path: 'login', component: LoginComponent },
+      // { path: 'admin/products', component: AdminProductsComponent },
+      // { path: 'admin/orders', component: AdminOrdersComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
