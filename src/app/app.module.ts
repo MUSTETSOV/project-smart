@@ -22,6 +22,13 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 
 
+import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +44,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'smartfix-app' }),
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
@@ -46,4 +53,15 @@ import { FooterComponent } from './shared/footer/footer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(APP_ID) private appId: string) {
+    const platform = isPlatformBrowser(platformId) ?
+    'on the server' : 'in the browser';
+    console.log('Running ${platform} with appId=${appId}');
+    }
+
+
+ }
