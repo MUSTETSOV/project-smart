@@ -12,7 +12,11 @@ export class DevicesComponent implements OnInit {
   public brands: any = [];
 
   constructor( private categoryService: GetCategoriesService, public brandsService: BrandsService) {
+
+    console.log('Before' + this.brands);
+    console.log(this.brands);
   }
+
 
 
   ngOnInit() {
