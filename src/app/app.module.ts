@@ -9,7 +9,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/header/header.component';
 import { IntroComponent } from './intro/intro.component';
-import { Header2Component } from './header2/header2.component';
 import { AboutusComponent } from './main/aboutus/aboutus.component';
 import { DeviceCategoriesComponent } from './device-categories/device-categories.component';
 import { MakeSimpleComponent } from './main/make-simple/make-simple.component';
@@ -35,7 +34,6 @@ import { isPlatformBrowser } from '@angular/common';
     AppComponent,
     HeaderComponent,
     IntroComponent,
-    Header2Component,
     AboutusComponent,
     DeviceCategoriesComponent,
     MakeSimpleComponent,
