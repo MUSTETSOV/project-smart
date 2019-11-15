@@ -9,14 +9,9 @@ import { BrandsService } from '../services/brands.service';
 })
 export class DevicesComponent implements OnInit {
 
-  allCategories: any[] = [];
-
   public brands: any = [];
 
-
   constructor( private categoryService: GetCategoriesService, public brandsService: BrandsService) {
-
-
   }
 
 

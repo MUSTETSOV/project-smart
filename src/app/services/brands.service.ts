@@ -24,7 +24,7 @@ export class BrandsService {
       .pipe(
         retry(1),
         catchError(this.errorHandl)
-      )
+      );
     }
 
     // GET
@@ -33,7 +33,7 @@ export class BrandsService {
       .pipe(
         retry(1),
         catchError(this.errorHandl)
-      )
+      );
     }
 
 
