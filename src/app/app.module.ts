@@ -28,6 +28,8 @@ import { HomeComponent } from './home/home.component';
 import { DevicesComponent } from './devices/devices.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrandsService } from './services/brands.service';
+import { BuyPartsComponent } from './buy-parts/buy-parts.component';
+import { ModelCardComponent } from './buy-parts/model-card/model-card.component';
 
 
 
@@ -46,7 +48,9 @@ import { BrandsService } from './services/brands.service';
     ReviewsComponent,
     FooterComponent,
     HomeComponent,
-    DevicesComponent
+    DevicesComponent,
+    BuyPartsComponent,
+    ModelCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'smartfix-app' }),
@@ -56,7 +60,11 @@ import { BrandsService } from './services/brands.service';
     NgbModule,
     RouterModule.forRoot([
        { path: '', component: HomeComponent },
-       { path: 'devices', component: DevicesComponent }
+       { path: 'devices', component: DevicesComponent },
+       { path: 'buy-parts', component: BuyPartsComponent }
+
+
+
       // { path: 'shopping-cart', component: ShoppingCartComponent },
       // { path: 'check-out', component: CheckOutComponent },
       // { path: 'order-success', component: OrderSuccessComponent },
