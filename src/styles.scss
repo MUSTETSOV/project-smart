@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 
+
+
+
 @font-face {
   font-family: SF Pro Display;
   src: url(assets/fonts/SFProDisplayRegular.ttf) format("opentype");
@@ -61,3 +64,8 @@ button {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: #4371FE;
+}

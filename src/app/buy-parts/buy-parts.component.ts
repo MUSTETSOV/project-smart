@@ -9,8 +9,11 @@ import {MatSelectModule} from '@angular/material/select';
 })
 export class BuyPartsComponent implements OnInit {
 
-  toppings = new FormControl();
-  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  tipes = new FormControl();
+  tipesList: string[] = ['Refregerator', 'TV', 'Dryer', 'Scanner'];
+
+
+  foods: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   constructor() { }
 

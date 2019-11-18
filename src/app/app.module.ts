@@ -33,7 +33,9 @@ import { ModelCardComponent } from './buy-parts/model-card/model-card.component'
 
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import {MatCardModule} from '@angular/material/card';
+import { MatSnackBarModule, MatIconModule, MatTooltipModule } from '@angular/material';
+import { StarRatingComponent } from './buy-parts/model-card/star-rating/star-rating.component';
 
 
 
@@ -52,7 +54,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HomeComponent,
     DevicesComponent,
     BuyPartsComponent,
-    ModelCardComponent
+    ModelCardComponent,
+    StarRatingComponent
 
   ],
   imports: [
@@ -65,21 +68,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
        { path: '', component: HomeComponent },
        { path: 'devices', component: DevicesComponent },
        { path: 'buy-parts', component: BuyPartsComponent }
-
-
-
-      // { path: 'shopping-cart', component: ShoppingCartComponent },
-      // { path: 'check-out', component: CheckOutComponent },
-      // { path: 'order-success', component: OrderSuccessComponent },
-      // { path: 'my/orders', component: MyOrdersComponent },
-      // { path: 'login', component: LoginComponent },
-      // { path: 'admin/products', component: AdminProductsComponent },
-      // { path: 'admin/orders', component: AdminOrdersComponent }
     ]),
     HttpClientModule,
     MatSelectModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
+    MatSnackBarModule,
+    MatIconModule,
+    MatTooltipModule
 
   ],
   providers: [BrandsService],

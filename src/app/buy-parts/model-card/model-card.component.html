@@ -1,1 +1,42 @@
-<p>model-card works!</p>
+<mat-card class="model-card">
+  <mat-card-header>
+
+  </mat-card-header>
+  <img mat-card-image src="../../../assets/models/71Ma5DxvemL.png" alt="Photo of a Shiba Inu">
+
+<div class = "row">
+    <div class = "col-6 align-self-center">
+  <ngb-rating [(rate)]="currentRate" [max]=5>
+      <ng-template let-fill="fill" let-index="index">
+          <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+        </ng-template>
+  </ngb-rating>
+</div>
+  <div class = "col-6 align-self-center">
+  <p class = "review">741 Reviews</p>
+</div>
+</div>
+
+  <mat-card-title style =
+  "font-family: SF Pro Display;
+  font-size: 17px;
+  line-height: 20px;
+  color: #272727;">
+  Refrigerator Air Filter</mat-card-title>
+
+  <mat-card-content>
+    <p style = "
+    font-family: SF Pro Display;
+    font-size: 12px;
+    line-height: 14px;
+    color: #272727;">
+        Genuine OEM Part # W10311524 | RC Item # 1876318
+    </p>
+    <mat-card-subtitle style = "
+    font-family: SF Pro Display;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4371FE;">$8.45</mat-card-subtitle>
+  </mat-card-content>
+
+</mat-card>

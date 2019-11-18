@@ -15,7 +15,11 @@
                 </div>
                   <div class="col-lg-10" style="padding: 30px; margin: 0px;">
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  <ngb-rating [(rate)]="currentRate"></ngb-rating>
+                  <ngb-rating [(rate)]="currentRate" [max]=5>
+                      <ng-template let-fill="fill" let-index="index">
+                          <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+                        </ng-template>
+                  </ngb-rating>
                 </div>
               </div>
               <div class="row">

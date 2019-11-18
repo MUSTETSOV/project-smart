@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-model-card',
   templateUrl: './model-card.component.html',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelCardComponent implements OnInit {
 
+  currentRate = 3;
+
   constructor() { }
 
   ngOnInit() {
-  }
+
+
+}
+
+
 
 }
