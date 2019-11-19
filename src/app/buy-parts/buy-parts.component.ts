@@ -12,8 +12,15 @@ export class BuyPartsComponent implements OnInit {
   tipes = new FormControl();
   tipesList: string[] = ['Refregerator', 'TV', 'Dryer', 'Scanner'];
 
+  brands = new FormControl();
+  brandsList: string[] = ['LG', 'Samsung', 'Apple', 'Bosch', 'Sony', 'Whirlpul'];
 
-  foods: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  categories = new FormControl();
+  categoriesList: string[] = ['Refrigerator', 'Washing Machine', 'Dryer', 'Lawn Mower', 'Dishwasher', 'Snowblower'];
+
+
+
+  sorts: string[] = ['Date', 'Type', 'Country', 'Functions'];
 
   constructor() { }
 
