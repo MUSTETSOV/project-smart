@@ -16,9 +16,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mdb-angular-free'`, () => {
+  it(`should have as title 'customer-smartfix'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('mdb-angular-free');
+    expect(app.title).toEqual('customer-smartfix');
   });
 });

@@ -36,6 +36,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import { MatSnackBarModule, MatIconModule, MatTooltipModule } from '@angular/material';
 import { StarRatingComponent } from './buy-parts/model-card/star-rating/star-rating.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 
 
@@ -55,7 +56,8 @@ import { StarRatingComponent } from './buy-parts/model-card/star-rating/star-rat
     DevicesComponent,
     BuyPartsComponent,
     ModelCardComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    ProductPageComponent
 
   ],
   imports: [
@@ -67,7 +69,8 @@ import { StarRatingComponent } from './buy-parts/model-card/star-rating/star-rat
     RouterModule.forRoot([
        { path: '', component: HomeComponent },
        { path: 'devices', component: DevicesComponent },
-       { path: 'buy-parts', component: BuyPartsComponent }
+       { path: 'buy-parts', component: BuyPartsComponent },
+       { path: 'product', component: ProductPageComponent }
     ]),
     HttpClientModule,
     MatSelectModule,
